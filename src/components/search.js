@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import debounce from 'lodash/debounce';
+import './search.css';
 
-import { searchGithub } from '../actions/searchActions'; 
+import { searchGithub } from '../actions/searchActions';
 
 class Search extends Component {
   constructor(props) {
@@ -28,8 +29,13 @@ class Search extends Component {
   render() {
     const { search } = this.state;
     return (
-      <div className="container">
-        <input name="search" onChange={this.handleChange} value={search} />
+      <div className="search-container">
+        <label className="search-label">Search for a Github User</label>
+        <input
+          name="search"
+          onChange={this.handleChange}
+          value={search}
+          className="search-box" />
       </div>
     );
   }

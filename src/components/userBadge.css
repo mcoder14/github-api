@@ -1,0 +1,59 @@
+.user {
+  display: flex;
+  justify-content: center;
+  margin: 1em 1em;
+}
+
+.user-container {
+  min-width: 300px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #d1d1d1;
+  padding: 1em;
+  flex-direction: column;
+}
+
+.user-title {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-image {
+  width: 50px;
+  height: 50px;
+}
+
+.name-title {
+  font-size: 50px;
+  margin-left: .5em;
+}
+
+.follow-row {
+  display: flex;
+  justify-content: space-around;
+  margin: 1em 2em;
+}
+
+.follower-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.follower-title {
+  font-size: 16px;
+}
+
+.follower-data {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .name-title {
+    font-size: 24px;
+  }
+}

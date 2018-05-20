@@ -10,6 +10,7 @@ export function searchGithub(username) {
       })   
       .catch((error) => {
         dispatch(setUser(error.response.status));
+        dispatch(setUserRepos(error.response.status));
       })
   }
 }
